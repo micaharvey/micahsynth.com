@@ -12,14 +12,15 @@ function App() {
           Welcome to the Micah Synth Beta!
         </Header>
         <img
-          src={process.env.PUBLIC_URL + "./RainbowSplatterMicahSynth.png"}
+          src={process.env.PUBLIC_URL + "/RainbowSplatterMicahSynth.png"}
           alt="Rainbow"
+          style={{ marginBottom: "-770px" }}
         />
         {/*<div style={{ "background-image": "url('TabbyTwitchBanner.jpg')" }} />*/}
-        <Card.Group style={{ marginTop: "-770px" }}>
+        <Card.Group>
           <Card>
             <Image
-              src={process.env.PUBLIC_URL + "./MicahSynthApple.png"}
+              src={process.env.PUBLIC_URL + "/MicahSynthApple.png"}
               wrapped
               ui={false}
             />
@@ -35,7 +36,7 @@ function App() {
           </Card>
           <Card>
             <Image
-              src={process.env.PUBLIC_URL + "./MicahSynthWindows.png"}
+              src={process.env.PUBLIC_URL + "/MicahSynthWindows.png"}
               wrapped
               ui={false}
             />
