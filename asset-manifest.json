@@ -1,24 +1,15 @@
 {
   "files": {
-    "main.css": "/homepage/static/css/main.acf57396.chunk.css",
-    "main.js": "/homepage/static/js/main.425eb4a1.chunk.js",
-    "main.js.map": "/homepage/static/js/main.425eb4a1.chunk.js.map",
-    "runtime-main.js": "/homepage/static/js/runtime-main.c048e2d4.js",
-    "runtime-main.js.map": "/homepage/static/js/runtime-main.c048e2d4.js.map",
-    "static/js/2.2eaf1c50.chunk.js": "/homepage/static/js/2.2eaf1c50.chunk.js",
-    "static/js/2.2eaf1c50.chunk.js.map": "/homepage/static/js/2.2eaf1c50.chunk.js.map",
-    "index.html": "/homepage/index.html",
-    "precache-manifest.e25b30de422025731b09e17193511369.js": "/homepage/precache-manifest.e25b30de422025731b09e17193511369.js",
-    "service-worker.js": "/homepage/service-worker.js",
-    "static/css/main.acf57396.chunk.css.map": "/homepage/static/css/main.acf57396.chunk.css.map",
-    "static/js/2.2eaf1c50.chunk.js.LICENSE": "/homepage/static/js/2.2eaf1c50.chunk.js.LICENSE",
-    "static/media/Micah Synth 0.8.1 Setup.exe.zip": "/homepage/static/media/Micah Synth 0.8.1 Setup.exe.79efab8e.zip",
-    "static/media/MicahSynth0.8.0.pkg.zip": "/homepage/static/media/MicahSynth0.8.0.pkg.57bea351.zip"
+    "main.css": "/static/css/main.77ceafd8.css",
+    "main.js": "/static/js/main.bd0b69d6.js",
+    "static/media/MicahSynth0.8.0.pkg.zip": "/static/media/MicahSynth0.8.0.pkg.81c08be7a25e63a0e7f5.zip",
+    "static/media/Micah Synth 0.8.1 Setup.exe.zip": "/static/media/Micah Synth 0.8.1 Setup.exe.eae6c6c6022b5850cda4.zip",
+    "index.html": "/index.html",
+    "main.77ceafd8.css.map": "/static/css/main.77ceafd8.css.map",
+    "main.bd0b69d6.js.map": "/static/js/main.bd0b69d6.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c048e2d4.js",
-    "static/js/2.2eaf1c50.chunk.js",
-    "static/css/main.acf57396.chunk.css",
-    "static/js/main.425eb4a1.chunk.js"
+    "static/css/main.77ceafd8.css",
+    "static/js/main.bd0b69d6.js"
   ]
 }
