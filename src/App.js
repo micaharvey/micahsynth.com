@@ -56,10 +56,13 @@ function App() {
 
       <h3 style={{ color: "white" }}> ^ Click Icon to open iOS App Store ^ </h3>
 
+      {/* --------------------------------------------------- */}
       <Divider style={{ color: "white", margin: "32px" }} />
+      <h3 style={{ color: "white" }}>MicahSynth for your Computer</h3>
       <h4 style={{ color: "white" }}>
-        Desktop Versions (Beta - requires Run as Admin on Windows/ Open a Mac
-        app from an unknown developer on Mac)
+        !Beta Versions! Requires "Run as Admin" on Windows / "Open a Mac app
+        from an unknown developer" on Mac. Comes with VST (audio plugin)
+        version!
       </h4>
       {/* <img
         src={process.env.PUBLIC_URL + "/RainbowSplatterMicahSynth.png"}
@@ -101,8 +104,15 @@ function App() {
           </Card.Content>
         </Card>
       </Card.Group>
+
+      {/* --------------------------------------------------- */}
+      <Divider style={{ color: "white", margin: "32px" }} />
+
       <h4>Links / Legal</h4>
       <a href="/privacy.html">Privacy Policy</a>
+      <div></div>
+      <a href="/terms.html">Terms</a>
+      <div style={{ height: "64px" }}></div>
     </body>
   );
 }

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <title>Terms of Use • MicahSynth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* ---------- THEME TOKENS (match /policy) ---------- */
+      :root {
+        --bg: #0f1220;
+        --card: #14182b;
+        --text: #e7ecff;
+        --muted: #a9b1d6;
+        --accent: #8ab4ff;
+        --border: #2a3154;
+        --shadow: rgba(0, 0, 0, 0.28);
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #ffffff;
+          --card: #f7f7fb;
+          --text: #14161c;
+          --muted: #5d6478;
+          --accent: #335eea;
+          --border: #e2e6f0;
+          --shadow: rgba(0, 0, 0, 0.06);
+        }
+      }
+      html[data-theme="light"] {
+        --bg: #ffffff;
+        --card: #f7f7fb;
+        --text: #14161c;
+        --muted: #5d6478;
+        --accent: #335eea;
+        --border: #e2e6f0;
+        --shadow: rgba(0, 0, 0, 0.06);
+      }
+      html[data-theme="dark"] {
+        --bg: #0f1220;
+        --card: #14182b;
+        --text: #e7ecff;
+        --muted: #a9b1d6;
+        --accent: #8ab4ff;
+        --border: #2a3154;
+        --shadow: rgba(0, 0, 0, 0.28);
+      }
+
+      /* ---------- LAYOUT ---------- */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto,
+          "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+      .wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+      header {
+        margin-bottom: 24px;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        justify-content: space-between;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: 0.2px;
+      }
+      .sub {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 28px;
+        box-shadow: 0 8px 24px var(--shadow);
+      }
+      h2 {
+        margin-top: 1.6em;
+        font-size: 1.2rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 6px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        margin: 0.6em 0 0.6em 1.2em;
+      }
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .btn {
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--text);
+        border-radius: 10px;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: color-mix(in oklab, var(--card), black 4%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <div class="sub">
+            <a href="https://micahsynth.com">← micahsynth.com</a>
+          </div>
+          <h1>Terms of Use</h1>
+          <div class="sub">
+            Effective date:
+            <time id="eff" datetime="2025-09-23">September 23, 2025</time>
+          </div>
+        </div>
+        <div>
+          <button id="themeBtn" class="btn" aria-label="Toggle theme">
+            🌓 Theme
+          </button>
+        </div>
+      </header>
+
+      <article class="card">
+        <p>
+          These Terms of Use (“Terms”) govern your access to and use of
+          MicahSynth (the “App”). By installing, accessing, or using the App,
+          you agree to be bound by these Terms. If you do not agree, do not use
+          the App.
+        </p>
+
+        <h2 id="license">1) License</h2>
+        <p>
+          Subject to these Terms, you are granted a personal, limited,
+          non-exclusive, non-transferable, revocable license to install and use
+          the App on devices you own or control for your own non-commercial or
+          commercial creative work. MicahSynth and its licensors retain all
+          rights not expressly granted.
+        </p>
+
+        <h2 id="acceptable-use">2) Acceptable Use</h2>
+        <ul>
+          <li>
+            Do not reverse engineer, decompile, or attempt to derive the source
+            code except to the extent permitted by law.
+          </li>
+          <li>
+            Do not circumvent technical protections or modify, distribute, or
+            create derivative works of the App except as expressly allowed.
+          </li>
+          <li>
+            Do not use the App to violate any law, infringe IP rights, or
+            distribute malware or harmful content.
+          </li>
+          <li>
+            Do not use the App in a way that could damage, disable, or impair
+            services or systems.
+          </li>
+        </ul>
+
+        <h2 id="ip">3) Intellectual Property</h2>
+        <p>
+          The App and all related content, trademarks, logos, and materials are
+          owned by MicahSynth or its licensors and are protected by intellectual
+          property laws. Using the App does not grant you ownership of any
+          intellectual property rights in the App or its content.
+        </p>
+
+        <h2 id="user-content">4) Your Output</h2>
+        <p>
+          You retain any rights you may have in the sounds, music, or other
+          output you create using the App. You are responsible for ensuring you
+          have the necessary rights for any materials you incorporate.
+        </p>
+
+        <h2 id="privacy">5) Privacy</h2>
+        <p>
+          The App does not collect personal data. See the
+          <a href="/policy">Privacy Policy</a> for details.
+        </p>
+
+        <h2 id="third-party">6) Third-Party Services & Open Source</h2>
+        <p>
+          The App may include or link to third-party components or libraries
+          governed by their own licenses. Where required, applicable notices and
+          licenses will be provided in-app or on the project website.
+          Third-party sites and services are not controlled by MicahSynth; use
+          them at your own discretion.
+        </p>
+
+        <h2 id="updates">7) Updates & Availability</h2>
+        <p>
+          Features may change, and updates may be delivered through your app
+          store. MicahSynth has no obligation to provide updates or to continue
+          making the App available. Certain features may vary by device.
+        </p>
+
+        <h2 id="fees">8) Fees</h2>
+        <p>
+          The App is currently offered free of charge. MicahSynth reserves the
+          right to introduce optional paid features or charges in the future
+          with notice through the store listing or within the App.
+        </p>
+
+        <h2 id="warranty">9) Disclaimer of Warranties</h2>
+        <p>
+          THE APP IS PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT WARRANTIES OF
+          ANY KIND, EXPRESS OR IMPLIED, INCLUDING IMPLIED WARRANTIES OF
+          MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND
+          NON-INFRINGEMENT. YOUR USE OF THE APP IS AT YOUR SOLE RISK.
+        </p>
+
+        <h2 id="liability">10) Limitation of Liability</h2>
+        <p>
+          TO THE MAXIMUM EXTENT PERMITTED BY LAW, MICAHSYNTH SHALL NOT BE LIABLE
+          FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR
+          PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, DATA, USE, OR GOODWILL,
+          ARISING FROM OR RELATED TO YOUR USE OF THE APP, EVEN IF ADVISED OF THE
+          POSSIBILITY OF SUCH DAMAGES. IN NO EVENT SHALL MICAHSYNTH’S TOTAL
+          LIABILITY EXCEED THE GREATER OF (A) THE AMOUNT YOU PAID (IF ANY) FOR
+          THE APP IN THE 12 MONTHS PRECEDING THE CLAIM, OR (B) USD $5.
+        </p>
+
+        <h2 id="termination">11) Termination</h2>
+        <p>
+          MicahSynth may suspend or terminate your access to the App at any time
+          if you violate these Terms or where required by law. Upon termination,
+          you must cease use of the App. Sections that by their nature should
+          survive termination will survive (e.g., IP, warranty disclaimer,
+          liability limits).
+        </p>
+
+        <h2 id="export">12) Export & Sanctions</h2>
+        <p>
+          You agree to comply with applicable export control and sanctions laws.
+          You will not download or use the App in any jurisdiction where such
+          use is prohibited, or for any prohibited purpose.
+        </p>
+
+        <h2 id="law">13) Governing Law</h2>
+        <p>
+          These Terms are governed by the laws of the State of Washington, USA,
+          without regard to its conflict of laws rules. You agree to the
+          exclusive jurisdiction and venue of courts located in King County,
+          Washington, for disputes arising out of these Terms or the App.
+        </p>
+
+        <h2 id="changes">14) Changes to These Terms</h2>
+        <p>
+          We may update these Terms to reflect product or legal changes.
+          Material changes will be posted here with an updated effective date.
+          Your continued use of the App after changes become effective
+          constitutes acceptance of the revised Terms.
+        </p>
+
+        <h2 id="contact">15) Contact</h2>
+        <p>
+          Questions about these Terms? Email
+          <a href="mailto:hello@micahsynth.com">hello@micahsynth.com</a>.
+        </p>
+
+        <p class="sub">
+          These Terms are intended as a clear summary and do not constitute
+          legal advice.
+        </p>
+      </article>
+
+      <footer>
+        © <span id="y"></span> MicahSynth.
+        <span class="sub">All rights reserved.</span>
+      </footer>
+    </div>
+
+    <script>
+      // Footer year + theme persistence (matches /policy)
+      document.getElementById("y").textContent = new Date().getFullYear();
+
+      const key = "policy-theme"; // reuse same key so toggle stays consistent across pages
+      const root = document.documentElement;
+      const btn = document.getElementById("themeBtn");
+
+      function applyTheme(t) {
+        root.setAttribute("data-theme", t);
+      }
+      function getSystemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+
+      let saved = localStorage.getItem(key);
+      if (saved === "light" || saved === "dark") applyTheme(saved);
+      else applyTheme("auto");
+
+      btn.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme");
+        let next;
+        if (current === "auto")
+          next = getSystemTheme() === "dark" ? "light" : "dark";
+        else next = current === "dark" ? "light" : "dark";
+        applyTheme(next);
+        localStorage.setItem(key, next);
+      });
+    </script>
+  </body>
+</html>
