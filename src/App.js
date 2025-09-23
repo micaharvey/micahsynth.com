@@ -3,67 +3,35 @@ import "./App.css";
 import MacOSX from "./packages/MicahSynth0.8.0.pkg.zip";
 import Win64 from "./packages/Micah Synth 0.8.1 Setup.exe.zip";
 import { Card, Icon, Image, Header, Divider } from "semantic-ui-react";
+import TabbyParallaxHeader from "./TabbyParallaxHeader";
 
 function App() {
   return (
     <body style={{ textAlign: "center" }}>
-      <div
-        style={{
-          position: "relative",
-          width: "100%", // fill container width
-          paddingTop: "25%", // aspect ratio = height ÷ width (25% = 4:1)
-          backgroundImage: `url(${process.env.PUBLIC_URL +
-            "/TabbyTwitchBanner.jpg"})`,
-          backgroundSize: "cover", // scale image to cover
-          backgroundPosition: "center", // center the image
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        {/*  overlay text */}
-        <h2
-          style={{
-            position: "absolute",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
-            color: "white",
-            textShadow: `
-                          0 0 10px rgba(0,0,0,1),
-                          0 0 20px rgba(0,0,0,0.9),
-                          0 0 40px rgba(0,0,0,0.8),
-                          0 0 80px rgba(0,0,0,0.7)
-                        `,
-            margin: 0,
-          }}
-        >
-          Micah Synth - Enjoy on iOS for Free Today!
-        </h2>
-      </div>
+      <TabbyParallaxHeader />
 
-      {/* Rainbow backdrop with centered app icon */}
-      <div
-        style={{
-          display: "grid",
-          placeItems: "center",
-          padding: "16px 0",
-          marginBottom: "-10%",
-        }}
-      >
+      <div style={{ display: "grid", placeItems: "center", padding: "16px 0" }}>
         <div
           style={{
             position: "relative",
-            width: "min(90vw, 520px)", // cap the width so it doesn’t fill the page
+            width: "min(90vw, 520px)",
             margin: "0 auto",
+            aspectRatio: "3 / 2", // pick a *shorter* ratio to trim the bottom
+            overflow: "hidden",
           }}
         >
-          {/* Backdrop image: scales naturally, no cropping */}
           <img
             src={process.env.PUBLIC_URL + "/RainbowSplatterMicahSynth.png"}
             alt=""
-            style={{ width: "100%", height: "auto", display: "block" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover", // fill the box
+              objectPosition: "top", // keep the top, crop the bottom
+              display: "block",
+            }}
           />
 
-          {/* Clickable app logo centered on top */}
           <a
             href="https://apps.apple.com/us/app/micah-synth/id1579750842"
             style={{
@@ -71,15 +39,14 @@ function App() {
               inset: 0,
               display: "grid",
               placeItems: "center",
-              textDecoration: "none",
             }}
           >
             <img
               src={process.env.PUBLIC_URL + "/MicahSynthIconIOS360.png"}
               alt="Get Micah Synth on iOS"
               style={{
-                width: "160px",
-                height: "160px",
+                width: 160,
+                height: 160,
                 filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.35))",
               }}
             />
@@ -88,6 +55,7 @@ function App() {
       </div>
 
       <h3 style={{ color: "white" }}> ^ Click Icon to open iOS App Store ^ </h3>
+
       <Divider style={{ color: "white", margin: "32px" }} />
       <h4 style={{ color: "white" }}>
         Desktop Versions (Beta - requires Run as Admin on Windows/ Open a Mac
