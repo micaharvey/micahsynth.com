@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.77ceafd8.css",
-    "main.js": "/static/js/main.bd0b69d6.js",
+    "main.css": "/static/css/main.6cedac52.css",
+    "main.js": "/static/js/main.b63247ed.js",
     "static/media/MicahSynth0.8.0.pkg.zip": "/static/media/MicahSynth0.8.0.pkg.81c08be7a25e63a0e7f5.zip",
     "static/media/Micah Synth 0.8.1 Setup.exe.zip": "/static/media/Micah Synth 0.8.1 Setup.exe.eae6c6c6022b5850cda4.zip",
     "index.html": "/index.html",
-    "main.77ceafd8.css.map": "/static/css/main.77ceafd8.css.map",
-    "main.bd0b69d6.js.map": "/static/js/main.bd0b69d6.js.map"
+    "main.6cedac52.css.map": "/static/css/main.6cedac52.css.map",
+    "main.b63247ed.js.map": "/static/js/main.b63247ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.77ceafd8.css",
-    "static/js/main.bd0b69d6.js"
+    "static/css/main.6cedac52.css",
+    "static/js/main.b63247ed.js"
   ]
 }
