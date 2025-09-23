@@ -101,6 +101,8 @@ function App() {
           </Card.Content>
         </Card>
       </Card.Group>
+      <h4>Links / Legal</h4>
+      <a href="/privacy.html">Privacy Policy</a>
     </body>
   );
 }

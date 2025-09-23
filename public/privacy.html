@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <title>Privacy Policy • MicahSynth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      /* ---------- THEME TOKENS ---------- */
+      :root {
+        --bg: #0f1220;
+        --card: #14182b;
+        --text: #e7ecff;
+        --muted: #a9b1d6;
+        --accent: #8ab4ff;
+        --border: #2a3154;
+        --shadow: rgba(0, 0, 0, 0.28);
+      }
+      @media (prefers-color-scheme: light) {
+        :root {
+          --bg: #ffffff;
+          --card: #f7f7fb;
+          --text: #14161c;
+          --muted: #5d6478;
+          --accent: #335eea;
+          --border: #e2e6f0;
+          --shadow: rgba(0, 0, 0, 0.06);
+        }
+      }
+      /* Manual override (persists) */
+      html[data-theme="light"] {
+        --bg: #ffffff;
+        --card: #f7f7fb;
+        --text: #14161c;
+        --muted: #5d6478;
+        --accent: #335eea;
+        --border: #e2e6f0;
+        --shadow: rgba(0, 0, 0, 0.06);
+      }
+      html[data-theme="dark"] {
+        --bg: #0f1220;
+        --card: #14182b;
+        --text: #e7ecff;
+        --muted: #a9b1d6;
+        --accent: #8ab4ff;
+        --border: #2a3154;
+        --shadow: rgba(0, 0, 0, 0.28);
+      }
+
+      /* ---------- LAYOUT ---------- */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto,
+          "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      }
+      .wrap {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 48px 20px 72px;
+      }
+      header {
+        margin-bottom: 24px;
+        display: flex;
+        align-items: baseline;
+        gap: 12px;
+        justify-content: space-between;
+      }
+      h1 {
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: 0.2px;
+      }
+      .sub {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 28px;
+        box-shadow: 0 8px 24px var(--shadow);
+      }
+      h2 {
+        margin-top: 1.6em;
+        font-size: 1.2rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 6px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      ul {
+        margin: 0.6em 0 0.6em 1.2em;
+      }
+      footer {
+        margin-top: 28px;
+        color: var(--muted);
+        font-size: 0.9rem;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .btn {
+        border: 1px solid var(--border);
+        background: transparent;
+        color: var(--text);
+        border-radius: 10px;
+        padding: 6px 10px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background: color-mix(in oklab, var(--card), black 4%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div>
+          <div class="sub">
+            <a href="https://micahsynth.com">← micahsynth.com</a>
+          </div>
+          <h1>Privacy Policy</h1>
+          <div class="sub">
+            Effective date:
+            <time id="eff" datetime="2025-09-23">September 23, 2025</time>
+          </div>
+        </div>
+        <div>
+          <button id="themeBtn" class="btn" aria-label="Toggle theme">
+            🌓 Theme
+          </button>
+        </div>
+      </header>
+
+      <article
+        class="card"
+        itemscope
+        itemtype="https://schema.org/PrivacyPolicy"
+      >
+        <p itemprop="description">
+          MicahSynth (“the App”) is an audio application that generates and
+          processes sound locally on your device. The App does not collect,
+          store, or share personal information.
+        </p>
+
+        <h2 id="data">1) Data Collection</h2>
+        <p>
+          The App does not collect or transmit personal data, usage data, or
+          analytics. No accounts, logins, or identifiers are required to use the
+          App.
+        </p>
+
+        <h2 id="perms">2) Permissions</h2>
+        <p>
+          The App does not request microphone, camera, location, or other
+          sensitive permissions. Standard system behavior for audio output may
+          apply; no additional permissions are required.
+        </p>
+
+        <h2 id="third">3) Third Parties</h2>
+        <p>
+          The App does not include third-party advertising, tracking, or
+          analytics SDKs. All functionality runs locally on the device.
+        </p>
+
+        <h2 id="kids">4) Children’s Privacy</h2>
+        <p>
+          The App is suitable for all ages and does not knowingly collect data
+          from children.
+        </p>
+
+        <h2 id="changes">5) Changes</h2>
+        <p>
+          This policy may be updated to reflect product or legal changes.
+          Updates will be posted here with a new effective date.
+        </p>
+
+        <h2 id="contact">6) Contact</h2>
+        <p>
+          Questions? Email
+          <a href="mailto:hello@micahsynth.com">hello@micahsynth.com</a>.
+        </p>
+        <p class="sub">
+          If future versions add features like cloud sync or crash reporting,
+          this page will be updated to describe the data, purpose, and your
+          choices.
+        </p>
+      </article>
+
+      <footer>
+        © <span id="y"></span> MicahSynth.
+        <span class="sub">All rights reserved.</span>
+      </footer>
+    </div>
+
+    <script>
+      // Effective year + theme persistence
+      document.getElementById("y").textContent = new Date().getFullYear();
+
+      const key = "policy-theme";
+      const root = document.documentElement;
+      const btn = document.getElementById("themeBtn");
+
+      function applyTheme(t) {
+        root.setAttribute("data-theme", t);
+      }
+      function getSystemTheme() {
+        return window.matchMedia &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      }
+
+      // init: read saved theme or follow system
+      let saved = localStorage.getItem(key);
+      if (saved === "light" || saved === "dark") applyTheme(saved);
+      else applyTheme("auto"); // system-controlled via @media
+
+      btn.addEventListener("click", () => {
+        const current = root.getAttribute("data-theme");
+        let next;
+        if (current === "auto")
+          next = getSystemTheme() === "dark" ? "light" : "dark";
+        else next = current === "dark" ? "light" : "dark";
+        applyTheme(next);
+        localStorage.setItem(key, next);
+      });
+    </script>
+  </body>
+</html>
