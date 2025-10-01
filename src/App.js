@@ -2,7 +2,8 @@ import React from "react";
 import "./App.css";
 import MacOSX from "./packages/MicahSynth0.8.0.pkg.zip";
 import Win64 from "./packages/Micah Synth 0.8.1 Setup.exe.zip";
-import { Card, Icon, Image, Header, Divider } from "semantic-ui-react";
+import RCMac from "./packages/MicahSynth-1.2.0.dmg";
+import { Card, Icon, Image, Divider } from "semantic-ui-react";
 import TabbyParallaxHeader from "./TabbyParallaxHeader";
 
 function App() {
@@ -55,21 +56,12 @@ function App() {
       </div>
 
       <h3 style={{ color: "white" }}> ^ Click Icon to open iOS App Store ^ </h3>
-
       {/* --------------------------------------------------- */}
       <Divider style={{ color: "white", margin: "32px" }} />
-      <h3 style={{ color: "white" }}>MicahSynth for your Computer</h3>
+      <h3 style={{ color: "white" }}>🎉 New: Micah Synth for MacOS 🎉</h3>
       <h4 style={{ color: "white" }}>
-        !Beta Versions! Requires "Run as Admin" on Windows / "Open a Mac app
-        from an unknown developer" on Mac. Comes with VST (audio plugin)
-        version!
+        Release Candidate for MacOS (Universal App)
       </h4>
-      {/* <img
-        src={process.env.PUBLIC_URL + "/RainbowSplatterMicahSynth.png"}
-        alt="Rainbow"
-        style={{ marginBottom: "-770px" }}
-      /> */}
-      {/*<div style={{ "background-image": "url('TabbyTwitchBanner.jpg')" }} />*/}
       <Card.Group style={{ justifyContent: "center" }}>
         <Card>
           <Image
@@ -78,12 +70,42 @@ function App() {
             ui={false}
           />
           <Card.Content>
-            <Card.Header>Micah Synth (Mac)</Card.Header>
+            <Card.Header>Micah Synth (RC 1.2.0)</Card.Header>
+          </Card.Content>
+          <Card.Content extra>
+            <a href={RCMac} download>
+              <Icon name="download" />
+              Mac (Universal App) Download
+            </a>
+          </Card.Content>
+        </Card>
+      </Card.Group>
+
+      {/* --------------------------------------------------- */}
+      <Divider style={{ color: "white", margin: "32px" }} />
+      <h3 style={{ color: "white" }}>
+        Beta Version Micah Synth for your Computer
+      </h3>
+      <h4 style={{ color: "white", maxWidth: "420px", justifySelf: "center" }}>
+        !Beta Versions! Use New RC build for Mac - this is still the only way
+        for Windows... for now... Requires "Run as Admin" on Windows / "Open a
+        Mac app from an unknown developer" on Mac. Comes with VST (audio plugin)
+        version!
+      </h4>
+      <Card.Group style={{ justifyContent: "center" }}>
+        <Card>
+          <Image
+            src={process.env.PUBLIC_URL + "/MicahSynthApple.png"}
+            wrapped
+            ui={false}
+          />
+          <Card.Content>
+            <Card.Header>(Old) Micah Synth (Beta)</Card.Header>
           </Card.Content>
           <Card.Content extra>
             <a href={MacOSX} download>
               <Icon name="download" />
-              Mac OSX Download
+              Mac Beta Download
             </a>
           </Card.Content>
         </Card>
@@ -94,12 +116,12 @@ function App() {
             ui={false}
           />
           <Card.Content>
-            <Card.Header>Micah Synth (Windows)</Card.Header>
+            <Card.Header>Micah Synth (Beta)</Card.Header>
           </Card.Content>
           <Card.Content extra>
             <a href={Win64} download>
               <Icon name="download" />
-              Windows Download
+              Windows Beta Download
             </a>
           </Card.Content>
         </Card>
