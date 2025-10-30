@@ -11,6 +11,10 @@ function App() {
     <body style={{ textAlign: "center" }}>
       <TabbyParallaxHeader />
 
+      <h3 style={{ color: "white" }}>
+        {" "}
+        🎶 📱 🎶 Micah Synth on iOS App Store 🎶 📱 🎶
+      </h3>
       <div style={{ display: "grid", placeItems: "center", padding: "16px 0" }}>
         <div
           style={{
@@ -55,10 +59,43 @@ function App() {
         </div>
       </div>
 
-      <h3 style={{ color: "white" }}> ^ Click Icon to open iOS App Store ^ </h3>
+      <h3 style={{ color: "white" }}>
+        {" "}
+        ^ 🎶 📱 🎶 Click Icon to open iOS App Store 🎶 📱 🎶 ^{" "}
+      </h3>
+
       {/* --------------------------------------------------- */}
       <Divider style={{ color: "white", margin: "32px" }} />
-      <h3 style={{ color: "white" }}>🎉 New: Micah Synth for MacOS 🎉</h3>
+
+      <h3 style={{ color: "white" }}>
+        🎉 New: Micah Synth for Android 🎶 🤖 🎶 🎉
+      </h3>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.woodcraftsounds.micahsynth"
+        style={{
+          inset: 0,
+          display: "grid",
+          placeItems: "center",
+        }}
+      >
+        <img
+          src={process.env.PUBLIC_URL + "/MicahSynthIconIOS360.png"}
+          alt="Get Micah Synth on iOS"
+          style={{
+            width: 160,
+            height: 160,
+            filter: "drop-shadow(0 8px 24px rgba(0,0,0,0.35))",
+          }}
+        />
+      </a>
+      <h3 style={{ color: "white" }}>
+        🎉 New: Micah Synth for Android 🎶 🤖 🎶 🎉
+      </h3>
+      {/* --------------------------------------------------- */}
+      <Divider style={{ color: "white", margin: "32px" }} />
+      <h3 style={{ color: "white" }}>
+        Micah Synth for MacOS 🎶 💻 🎶 🧑🏼‍💻 🎶
+      </h3>
       <h4 style={{ color: "white" }}>
         Release Candidate for MacOS (Universal App)
       </h4>

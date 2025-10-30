@@ -93,7 +93,7 @@ export default function TabbyParallaxHeader() {
           letterSpacing: 0.5,
         }}
       >
-        Micah Synth — Free on iOS
+        Micah Synth - Free music app for mobile and desktop
       </h2>
     </header>
   );
