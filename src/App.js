@@ -15,6 +15,9 @@ function App() {
         {" "}
         🎶 📱 🎶 Micah Synth on iOS App Store 🎶 📱 🎶
       </h3>
+      <p style={{ color: "white", marginTop: 4 }}>
+        Tap the icon to open Micah Synth in the iOS App Store.
+      </p>
       <div style={{ display: "grid", placeItems: "center", padding: "16px 0" }}>
         <div
           style={{
@@ -58,11 +61,6 @@ function App() {
           </a>
         </div>
       </div>
-
-      <h3 style={{ color: "white" }}>
-        {" "}
-        ^ 🎶 📱 🎶 Click Icon to open iOS App Store 🎶 📱 🎶 ^{" "}
-      </h3>
 
       {/* --------------------------------------------------- */}
       <Divider style={{ color: "white", margin: "32px" }} />
